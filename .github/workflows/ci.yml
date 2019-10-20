@@ -14,8 +14,8 @@ jobs:
     - name: Build
       uses: rrbutani/tlt-github-action@v0.3.0
       with:
-        command: build
+        target: build
     - name: Check
       uses: rrbutani/tlt-github-action@v0.3.0
       with:
-        command: check
+        target: check
