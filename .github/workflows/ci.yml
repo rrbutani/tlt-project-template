@@ -12,10 +12,10 @@ jobs:
       with:
         submodules: true
     - name: Build
-      uses: rrbutani/tlt-github-action@v0.3.0
+      uses: rrbutani/tlt-github-action@0.3.0
       with:
         target: build
     - name: Check
-      uses: rrbutani/tlt-github-action@v0.3.0
+      uses: rrbutani/tlt-github-action@0.3.0
       with:
         target: check
