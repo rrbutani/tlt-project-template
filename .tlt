@@ -1,0 +1,21 @@
+# Configuration file for project (bin).
+
+# Arguments:
+declare -- MODE="native"
+declare -- TARGET="project.out"
+declare -- MODULE_STRING=""
+
+# Variables:
+declare -x DOCKER="docker"
+declare -x DOCKER_CONTAINER="rrbutani/arm-llvm-toolchain:0.2.2"
+declare -x GLOBS="%.s:a|%.S:A|%.c:c|%.cpp:C|%.cc:C|%.cxx:C|"
+declare -x FOLDERS="'.' 'src' 'asm'"
+declare -x INCLUDE_DIRS="'.' 'inc'"
+declare -x PUB_INCLUDE_DIRS="'inc'"
+declare -x COMPILER_RT_DIR="/usr/arm-compiler-rt/lib/armv7e-m/fpu"
+declare -x NEWLIB_DIR="/usr/newlib-nano/arm-none-eabi/lib"
+declare -x BUILD_FILE="build.ninja"
+declare -x RELEASE_C_OPT="fast"
+declare -x RELEASE_LTO_OPT="3"
+declare -x DEBUG_C_OPT="0"
+declare -x DEBUG_LTO_OPT="1"
