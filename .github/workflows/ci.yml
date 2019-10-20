@@ -1,0 +1,21 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        submodules: true
+    - name: Build
+      uses: rrbutani/tlt-github-action@v0.3.0
+      with:
+        command: build
+    - name: Check
+      uses: rrbutani/tlt-github-action@v0.3.0
+      with:
+        command: check
