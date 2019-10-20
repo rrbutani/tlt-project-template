@@ -1,3 +1,4 @@
 # tlt project files #
 build.ninja
 target/
+compile_commands.json

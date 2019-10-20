@@ -4,6 +4,8 @@
 
 #include "tm4c123gh6pm.h"
 
+#define BUTTON_PRESS_THRESHOLD 500000
+
 // Make PF2 an output, enable digital I/O, ensure alt. functions off
 void portf_init(void) {
   SYSCTL_RCGCGPIO_R |= 0x20;  // 1) activate clock for Port F
@@ -34,7 +36,7 @@ void wait_for_press() {
       count = 0;
     }
 
-    if (count > 500000) {
+    if (count > BUTTON_PRESS_THRESHOLD) {
       return;
     }
   }
