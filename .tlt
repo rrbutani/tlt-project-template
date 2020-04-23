@@ -7,7 +7,7 @@ declare -- MODULE_STRING=""
 
 # Variables:
 declare -x DOCKER="docker"
-declare -x DOCKER_CONTAINER="rrbutani/arm-llvm-toolchain:0.4.1"
+declare -x DOCKER_CONTAINER="rrbutani/arm-llvm-toolchain:0.4.2"
 declare -x GLOBS="%.s:a|%.S:A|%.c:c|%.cpp:C|%.cc:C|%.cxx:C|"
 declare -x FOLDERS="'.' 'src' 'asm'"
 declare -x INCLUDE_DIRS="'.' 'inc'"

@@ -1,4 +1,4 @@
-ARG VER=0.4.1
+ARG VER=0.4.2
 
 FROM rrbutani/arm-llvm-toolchain:${VER}
 
